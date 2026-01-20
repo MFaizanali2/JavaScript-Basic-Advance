@@ -24,6 +24,29 @@
 // console.log(total)
 
 
+// let permissions = {
+//   read: true,
+//   write: false,
+//   delete: true
+// };
+
+// let allowed = Object.entries(permissions)
+//   .filter(([_, value]) => value)
+//   .map(([key]) => key);
+
+// console.log(allowed);
+
+
+let settings = {
+  darkMode: true,
+  notifications: false,
+  autoSave: true
+};
+
+let check = Object.entries(settings).filter(([_, item]) => item).map(([key]) => key)
+console.log(check)
+
+
 // let car = {
 //   brand: "Toyota",
 //   model: "Corolla",
@@ -33,11 +56,11 @@
 // console.log(Object.keys(car))
 
 
-let prices = {
-  apple: 100,
-  banana: 50,
-  mango: 150
-};
+// let prices = {
+//   apple: 100,
+//   banana: 50,
+//   mango: 150
+// };
 
-let total = Object.values(prices).reduce((sum, n) => sum + n, 0)
-console.log(total) 
+// let total = Object.values(prices).reduce((sum, n) => sum + n, 0)
+// console.log(total) 
